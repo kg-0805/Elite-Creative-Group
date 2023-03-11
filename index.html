@@ -15,6 +15,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <title>Elite Creative Group</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-83DPGDBW78"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-83DPGDBW78');
+  </script>
 </head>
 
 <body class="home_one">
@@ -205,29 +215,6 @@
     document.getElementById('curYr').innerHTML = year;
   </script>
 
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAXlrAnjR_53rPpJ2KddTgCp3vc6Y2RCIY",
-      authDomain: "website-58e06.firebaseapp.com",
-      projectId: "website-58e06",
-      storageBucket: "website-58e06.appspot.com",
-      messagingSenderId: "545755714224",
-      appId: "1:545755714224:web:dc7bbbdc7a9e156bdde175",
-      measurementId: "G-54KZ3ZS3QY"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
 
 </body>
 
