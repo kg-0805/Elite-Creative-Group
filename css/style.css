@@ -3886,7 +3886,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 74, 74, .9);
+    /* background-color: rgba(255, 74, 74, .9); */
     position: absolute;
     opacity: 0;
     transition: all .5s linear;
@@ -3928,7 +3928,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 }
 
 .gallery_post_two:hover .img img {
-    transform: scale(1.2)
+    /* transform: scale(1.2) */
 }
 
 .gallery_post_two:hover .hover_text h3,
