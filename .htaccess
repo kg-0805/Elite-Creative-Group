@@ -1,4 +1,27 @@
-RewriteEngine on
+RewriteEngine On
+
+# Remove index.html from the URL
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Rewrite .html file URLs to remove the file extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Display a forbidden error page
+ErrorDocument 403 /forbidden
+
+# Display a custom 404 error page
+ErrorDocument 404 /404
+
+# Block Bad Bots
+SetEnvIfNoCase User-Agent "BadBot" bad_bot
+Order Allow,Deny
+Allow from all
+Deny from env=bad_bot
+
+# Disable server signature
+ServerSignature Off
