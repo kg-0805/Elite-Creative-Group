@@ -97,6 +97,10 @@ button:focus {
     padding: 100px 0
 }
 
+.sec_pad_one {
+    padding: 50px 0
+}
+
 header {
     width: 100%;
     top: 0;
@@ -1330,7 +1334,6 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 .social_link li a i {
     position: absolute;
     top: 0;
-    left: 50%;
     transform: translateX(-50%);
     transition: all .5s
 }
@@ -2312,7 +2315,7 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
     color: #fff
 }
 
-.contact_form_box .text_box:nth-child(3) {
+.contact_form_box .text_box:nth-child(4) {
     margin-top: 70px
 }
 
@@ -2961,6 +2964,44 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 }
 
 .breadcrumb_area_two ol li a:after {
+    content: "/";
+    display: inline-block;
+    top: 0;
+    right: 0;
+    margin: 0 5px
+}
+
+.breadcrumb_area_two_three {
+    position: relative;
+    z-index: 1;
+    padding: 10px 0 50px;
+    background-size: cover !important
+}
+
+.breadcrumb_area_two_three .overlay {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 74, 74, .8);
+    position: absolute;
+    z-index: -1
+}
+
+.breadcrumb_area_two_three ol li {
+    font-size: 20px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    color: #000
+}
+
+.breadcrumb_area_two_three ol li a {
+    color: #000;
+    position: relative
+}
+
+.breadcrumb_area_two_three ol li a:after {
     content: "/";
     display: inline-block;
     top: 0;
@@ -3677,22 +3718,6 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
 .social_link.social_link_two li a {
     font-size: 18px;
     color: #ff33d1
-}
-
-.social_link.social_link_two li a .social_dribbble {
-    color: #ff33d1
-}
-
-.social_link.social_link_two li a .social_googleplus {
-    color: #f34a38
-}
-
-.social_link.social_link_two li a .social_facebook {
-    color: #475993
-}
-
-.social_link.social_link_two li a .social_twitter {
-    color: #5f9dec
 }
 
 .pr_title {
