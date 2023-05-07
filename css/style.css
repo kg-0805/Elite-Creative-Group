@@ -2952,11 +2952,11 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
     font-size: 20px;
     font-family: poppins, sans-serif;
     font-weight: 400;
-    color: #fff
+    color: #000
 }
 
 .breadcrumb_area_two ol li a {
-    color: #fff;
+    color: #000;
     position: relative
 }
 
@@ -3200,7 +3200,6 @@ header .portfolio_menu .burger_menu .dot_icon .dot {
     top: 0;
     left: 0;
     position: absolute;
-    background: rgba(255, 74, 74, .8);
     opacity: 0;
     transition: all .9s;
     z-index: 0
